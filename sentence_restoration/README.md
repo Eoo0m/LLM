@@ -1,40 +1,56 @@
 
-## 난독화된 한글 리뷰 복원 AI
 
-https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing
+---
 
-<img width="725" alt="Screenshot 2025-05-08 at 5 48 08 PM" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
+````markdown
+# 🤖 난독화된 한글 리뷰 복원 AI
 
+이 프로젝트는 난독화된 한글 리뷰 문장을 자연스러운 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 한다.  
+예를 들어, 다음과 같은 입력 문장이 있을 때:
 
+> **입력:** '별 한 게토 았깝땀. 왜 싸람듯릭 펼 1캐를 쥰눈징 컥꺾폰 싸람믐롯섞 맒록 섧멍핥쟈'  
+> **출력:** '별 한 개도 아깝다. 왜 사람들이 별 1개를 주는지 겪어본 사람으로서 말로 설명하자'
 
+처럼, 사람의 의도가 반영된 문장으로 복원하는 것을 목표로 한다.
 
+처음에는 일반적인 T5 모델을 이용해 학습을 시도했지만, 난독화된 한글은 대부분 토크나이저에서 `<unk>`(알 수 없는 토큰)으로 처리되어 학습에 큰 어려움이 있었다. 예를 들어 다음과 같이 입력 텍스트가 거의 전부 `<unk>`로 토큰화되는 문제가 발생했다.
 
+```python
+input_ids = [3, 2, 3, 2, ..., 1]
+tokens = ['▁', '<unk>', '▁', '<unk>', ..., '</s>']
+````
 
-### 난독화된 한글 리뷰를 원래의 명확한 내용의 리뷰로 복원
+이러한 문제를 해결하기 위해, 글자 단위보다 더 세밀하게 문자를 분해할 수 있는 **ByT5** 모델을 도입했다. ByT5는 입력 문장을 UTF-8 바이트 단위로 분해하여 처리하기 때문에, 기존 T5가 다루기 어려웠던 형태의 텍스트도 효과적으로 표현할 수 있다. 실제로 난독화된 입력에 대해서도 아래와 같이 안정적으로 토큰화가 이루어진다.
 
-'별 한 게토 았깝땀. 왜 싸람듯릭 펼 1캐를 쥰눈징 컥꺾폰 싸람믐롯섞 맒록 섧멍핥쟈'  -> '별 한 개도 아깝다. 왜 사람들이 별 1개를 주는지 겪어본 사람으로서 말로 설명하자'
+```python
+input_ids = [238, 182, 135, 35, 240, ..., 1]
+tokens = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
+```
 
-1. 초기 시도
-T5모델을 통해 학습 중 토큰화를 잘 못하는 것을 발견
-text = '별 한 게토 았깝땀. 왜 싸람듯릭 펼 1캐를 쥰눈징 컥꺾폰 싸람믐롯섞 맒록 섧멍핥쟈'
-input_ids = [3, 2, 3, 2, 3, 2, 3, 2, 5, 3, 2, 3, 2, 3, 2, 209, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 1]
-tokens = ['▁', '<unk>', '▁', '<unk>', ... , '▁', '<unk>', '▁', '<unk>', '</s>']
+모델 학습에는 여러 하이퍼파라미터 실험을 거쳤으며, 다음과 같은 설정이 가장 안정적인 성능을 보였다.
 
-2. 난독화된 단어들은 바이트 단위로 쪼개는 byT5 사용하기로 결심.
-   
-input_ids = [238, 182, 135, 35, 240, ... ,39, 162, 139, 1]
-tokens = ['ë', '³', '\x84', ' ', 'í', '\x95', ... ,'\x8d', 'í', '\x95', '¥', 'ì', '\x9f', '\x88', '</s>']
+* learning\_rate: **0.00025**
+* weight\_decay: **0.01**
+* num\_train\_epochs: **7**
+* per\_device\_train\_batch\_size: **2**
+* per\_device\_eval\_batch\_size: **4**
 
-3.
-<img width="335" alt="image" src="https://github.com/user-attachments/assets/8e667322-c59c-4433-9b7e-62aee2a83a0b" />
+이러한 설정은 다양한 시도 끝에 empirically 결정된 값이며, 추후 추론 성능 개선을 위한 추가 실험도 예정되어 있다.
 
-weight_decay, lr등을 조절하며 실험. 
-emperical한 수치로 결정
+본 프로젝트는 Google Colab 환경에서 실행되며, 아래 링크를 통해 직접 실험해볼 수 있다.
 
-learning_rate=0.00025,
-per_device_train_batch_size=2,
-per_device_eval_batch_size=4,
-num_train_epochs=7,
-weight_decay=0.01
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
+---
 
+<img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
+
+---
+
+본 프로젝트는 T5 및 ByT5 모델의 한글 처리 능력 비교, tokenizer 분석, 복원 정확도 등을 지속적으로 개선하며, 향후 실서비스 적용을 목표로 발전 중이다.
+
+```
+
+---
+
+```
