@@ -1,16 +1,21 @@
 
+
+# 🤖 난독화된 한글 리뷰 복원 AI
+
+
 <img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ABCDEFGHIJKL1234567890?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
-# 난독화된 한글 리뷰 복원 AI
 ---
 
-
-
-
-## 프로젝트 개요
 ````markdown
+
+
+---
+
+## 📌 프로젝트 개요
+
 이 프로젝트는 난독화된 한글 리뷰 문장을 원래의 명확한 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 합니다.  
 예를 들어, 다음과 같은 입력 문장이 있을 때:
 
@@ -19,23 +24,23 @@
 >  
 > **출력:**  
 > 별 한 개도 아깝다. 왜 사람들이 별 1개를 주는지 겪어본 사람으로서 말로 설명하자
-''''
 
+---
 
-##  문제 분석 및 접근 방식
+## 🔍 문제 분석 및 접근 방식
 
-### 기존 T5 모델의 한계
-````markdown
+### 🔹 기존 T5 모델의 한계
+
 일반 T5 모델을 사용해 학습을 시도했지만, 난독화된 한글은 대부분 `<unk>`(미지의 토큰)으로 처리되어 학습이 되지 않는 문제가 발생했습니다.
 
-
+```python
 input_ids = [3, 2, 3, 2, ..., 1]
 tokens     = ['▁', '<unk>', '▁', '<unk>', ..., '</s>']
 ````
 
 ---
 
-### 해결: ByT5 모델 도입
+### 🔹 해결: ByT5 모델 도입
 
 ByT5는 입력을 UTF-8 바이트 단위로 처리하기 때문에 난독화된 텍스트도 잘게 분해하여 처리할 수 있습니다. 다음과 같이 안정적인 토큰 분해가 가능했습니다.
 
@@ -58,7 +63,7 @@ tokens     = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 
 ---
 
-## 실제 복원 예시
+## 💬 실제 복원 예시
 
 > **입력:**
 > 녀뮨넒뭅 만죡숭러윤 효템뤼에오. 푸싸눼 옰면 콕 츄쩐학꼬 싶은 콧쉰웨오. 췌꾜윕뉘댜! ㅎㅎ 당음웨 또 옭 컷 갗았요.
@@ -78,5 +83,14 @@ tokens     = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 > 직원분들 전부 친절하시고 상냥하셨습니다. 방도 깔끔하고 뷰도 좋습니다.
 > 방음이 살짝 안 되는 게 아쉬웠지만, 잘 쉬었습니다. 감사해요!
 
+---
+
+
+
+```
 
 ---
+
+이제 이걸 `README.md`로 저장하면 깔끔한 프로젝트 소개 페이지가 완성돼.  
+추가로 데모 이미지, 성능 지표, huggingface model card까지 붙이고 싶으면 말해줘.
+```
