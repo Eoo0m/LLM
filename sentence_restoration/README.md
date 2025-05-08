@@ -30,9 +30,10 @@
 ```python
 input_ids = [3, 2, 3, 2, ..., 1]
 tokens     = ['▁', '<unk>', '▁', '<unk>', ..., '</s>']
+---
 ```
 ````
----
+
 
 ### 🔹 해결: ByT5 모델 도입
 ````markdown
@@ -55,8 +56,9 @@ tokens     = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 * `num_train_epochs`: **7**
 * `per_device_train_batch_size`: **2**
 * `per_device_eval_batch_size`: **4**
-````
 ---
+````
+
 
 ## 💬 실제 복원 예시
 ````markdown
