@@ -1,11 +1,10 @@
+<img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
 
-
----
 
 ````markdown
 # 🤖 난독화된 한글 리뷰 복원 AI
 
-<img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
+
 
 이 프로젝트는 난독화된 한글 리뷰 문장을 자연스러운 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 한다.  
 예를 들어, 다음과 같은 입력 문장이 있을 때:
