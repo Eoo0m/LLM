@@ -8,13 +8,13 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
 ---
-
+## 📌 프로젝트 개요
 ````markdown
 
 
 ---
 
-## 📌 프로젝트 개요
+
 
 이 프로젝트는 난독화된 한글 리뷰 문장을 원래의 명확한 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 합니다.  
 예를 들어, 다음과 같은 입력 문장이 있을 때:
@@ -26,8 +26,6 @@
 > 별 한 개도 아깝다. 왜 사람들이 별 1개를 주는지 겪어본 사람으로서 말로 설명하자
 
 ---
-
-## 🔍 문제 분석 및 접근 방식
 
 ### 🔹 기존 T5 모델의 한계
 
