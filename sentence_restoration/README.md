@@ -1,6 +1,6 @@
 
 ````markdown
-# 🤖 난독화된 한글 리뷰 복원 AI
+# 난독화된 한글 리뷰 복원 AI
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 프로젝트 개요
+## 프로젝트 개요
 
 이 프로젝트는 난독화된 한글 리뷰 문장을 원래의 명확한 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 합니다.  
 예를 들어, 다음과 같은 입력 문장이 있을 때:
@@ -57,7 +57,7 @@ tokens     = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 
 ---
 
-## 💬 실제 복원 예시
+## 실제 복원 예시
 
 > **입력:**
 > 녀뮨넒뭅 만죡숭러윤 효템뤼에오. 푸싸눼 옰면 콕 츄쩐학꼬 싶은 콧쉰웨오. 췌꾜윕뉘댜! ㅎㅎ 당음웨 또 옭 컷 갗았요.
