@@ -54,7 +54,6 @@ tokens     = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 * `num_train_epochs`: **7**
 * `per_device_train_batch_size`: **2**
 * `per_device_eval_batch_size`: **4**
----
 ````
 
 
