@@ -1,5 +1,6 @@
 <img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
 ````markdown
 # 🤖 난독화된 한글 리뷰 복원 AI
@@ -37,12 +38,12 @@ tokens = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 * per\_device\_train\_batch\_size: **2**
 * per\_device\_eval\_batch\_size: **4**
 
-이러한 설정은 다양한 시도 끝에 empirical하게 결정된 값이며 학습을 바탕으로 test셋이 시험해본 결과는 다음과 같다.
+이러한 설정은 다양한 시도 끝에 empirical하게 결정된 값이며 학습이후 test셋을 시험해본 결과는 다음과 같다.
 
 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
+녀뮨넒뭅 만죡숭러윤 효템뤼에오. 푸싸눼 옰면 콕 츄쩐학꼬 싶은 콧쉰웨오. 췌꾜윕뉘댜! ㅎㅎ 당음웨 또 옭 컷 갗았요.
+너무너무 만족스러운 호텔이에요. 부산에 오면 꼭 추천하고 싶은 곳이에요. 최고입니다! ㅎㅎ 다음에 또 올 것 같아요.
 
-
-
-
+에윈꽈 쩟 엽행윙락곳 척업셕 옛악깻떠뉘 툇싫 식갼됴 늣척 쥬쉬꼬 와윈툐 셔뷔쓸롤 쮸썼숲닒댜. 쥑원푼뜰 젼붙 췬철핫씩곬 상낭핫셧씁뉘댜. 빵통 꺌끎학곡 붙됴 좋쑵닐댜. 빵음잉 살착 않 된는 계 얏쒸었쥠많, 짤 쉬였숩뉜댜. 갊샤해욕!
+에이과 첫 여행이라고 적어서 예약했더니 퇴실 시간도 늦어 주시고 와인도 서비스로 주셨습니다. 직원분들 전부 친절하시고 사나하셨습니다. 방도 깔끔하고 뷰도 좋습니다. 방음이 살짝 안 되는 게 아쉬웠지만, 잘 쉬었습니다. 감사해요!
