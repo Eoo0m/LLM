@@ -6,6 +6,10 @@ https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sh
 <img width="725" alt="Screenshot 2025-05-08 at 5 48 08 PM" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
 
 
+
+
+
+
 ### 난독화된 한글 리뷰를 원래의 명확한 내용의 리뷰로 복원
 
 '별 한 게토 았깝땀. 왜 싸람듯릭 펼 1캐를 쥰눈징 컥꺾폰 싸람믐롯섞 맒록 섧멍핥쟈'  -> '별 한 개도 아깝다. 왜 사람들이 별 1개를 주는지 겪어본 사람으로서 말로 설명하자'
