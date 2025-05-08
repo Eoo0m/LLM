@@ -1,5 +1,8 @@
-<img width="1093" alt="Screenshot 2025-05-08 at 6 21 49 PM" src="https://github.com/user-attachments/assets/59f9392c-fb13-4bb7-8ee8-a39275e64a5e" />
-# 난독화된 한글 리뷰 복원 AI
+
+#### 난독화된 한글 리뷰 복원 AI
+
+<img width="725" alt="Screenshot 2025-05-08 at 5 48 08 PM" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
+
 
 ### 난독화된 한글 리뷰를 복원!
 
