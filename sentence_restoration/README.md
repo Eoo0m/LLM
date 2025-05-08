@@ -5,6 +5,8 @@
 ````markdown
 # 🤖 난독화된 한글 리뷰 복원 AI
 
+<img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
+
 이 프로젝트는 난독화된 한글 리뷰 문장을 자연스러운 형태로 복원하는 인공지능 모델을 개발하는 것을 목표로 한다.  
 예를 들어, 다음과 같은 입력 문장이 있을 때:
 
@@ -41,16 +43,6 @@ tokens = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
----
 
-<img width="725" alt="preview" src="https://github.com/user-attachments/assets/d2337f62-a818-47a7-8507-8b1acdfb942b" />
 
----
 
-본 프로젝트는 T5 및 ByT5 모델의 한글 처리 능력 비교, tokenizer 분석, 복원 정확도 등을 지속적으로 개선하며, 향후 실서비스 적용을 목표로 발전 중이다.
-
-```
-
----
-
-```
