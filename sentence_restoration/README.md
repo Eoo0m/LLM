@@ -37,9 +37,9 @@ tokens = ['ë', '³', '\x84', ' ', 'í', ..., '</s>']
 * per\_device\_train\_batch\_size: **2**
 * per\_device\_eval\_batch\_size: **4**
 
-이러한 설정은 다양한 시도 끝에 empirically 결정된 값이며, 추후 추론 성능 개선을 위한 추가 실험도 예정되어 있다.
+이러한 설정은 다양한 시도 끝에 empirical하게 결정된 값이며 학습을 바탕으로 test셋이 시험해본 결과는 다음과 같다.
 
-본 프로젝트는 Google Colab 환경에서 실행되며, 아래 링크를 통해 직접 실험해볼 수 있다.
+
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11XIJrvN6FBNS1Ez0JDo1NuOFfN68N3V8?usp=sharing)
 
