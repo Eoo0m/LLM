@@ -4,6 +4,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ABCDEFGHIJKL1234567890?usp=sharing)
 
 # 난독화된 한글 리뷰 복원 AI
+---
 ````markdown
 
 
