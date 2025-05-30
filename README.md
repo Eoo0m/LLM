@@ -1,5 +1,1 @@
-# llm_rec
-
-This project uses data from [GetSongBPM](https://getsongbpm.com/).
-
-Please visit their website for more information.
+This project uses the [AcousticBrainz API](https://acousticbrainz.org/api) for music analysis.
