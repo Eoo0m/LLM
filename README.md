@@ -1,1 +1,1 @@
-This project uses the [AcousticBrainz API](https://acousticbrainz.org/api) for music analysis.
+This project uses data from [GetSongBPM](https://www.getsongbpm.com).
