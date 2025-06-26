@@ -1,12 +1,15 @@
 # beta DPO
-E0oom/Llama-3.2-1B-betadpo
+
+[E0oom/Llama-3.2-1B-betadpo](https://huggingface.co/E0oom/Llama-3.2-1B-betadpo)
 
 ## Dynamic β Calibration at Batch-Level
+
 학습의 불안정성을 완화하기 위해,각 batch 마다 동적으로 β를 계산한다.해당 방법은 data의 질에 따라 조정되며, 
 high-quality,low-gap의 경우, β는 감소시켜 확실한 업데이트를 유도한다.
 반대로 low-quality,high-gap의 경우 β를 증가시켜 신중한 업데이트를 촉진하고 노이즈에 대한 과적합을 방지한다.
 
 ## β-Guided Data Filtering
+
 해당 방법은 data filtering approach 방법으로, 빈번하
 게나타나는 이상값[outliers]를 제거한다.
 즉,가장 신뢰할 수 있고 대표적인 샘플에 우선 순위를 지정하여 β 추정의 충실도를 유지한다. 
