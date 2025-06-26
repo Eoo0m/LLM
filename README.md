@@ -2,6 +2,12 @@
 
 [E0oom/Llama-3.2-1B-betadpo](https://huggingface.co/E0oom/Llama-3.2-1B-betadpo)
 
+
+기존 DPO의 수식
+<img width="742" alt="image" src="https://github.com/user-attachments/assets/388650c7-531b-46b4-a3c9-c00bc575f44c" />
+->reward가 잘못 측정되면 loss가 급등
+
+
 ## Dynamic β Calibration at Batch-Level
 
 학습의 불안정성을 완화하기 위해,각 batch 마다 동적으로 β를 계산한다.해당 방법은 data의 질에 따라 조정되며, 
@@ -17,5 +23,5 @@ high-quality,low-gap의 경우, β는 감소시켜 확실한 업데이트를 유
 
 여기서 배치의 크기를 키울 수 없는 자원의 한계로, 모멘텀 기반으로 평균과 분산을 잡아 이상치를 필터링한다.(학습에선 RTX3090을 사용하여, 배치 크기 2를 사용)
 
-<img width="769" alt="image" src="https://github.com/user-attachments/assets/88ce8f77-613e-4a7f-8f18-30192f310c71" />
+
 <img width="769" alt="image" src="https://github.com/user-attachments/assets/88ce8f77-613e-4a7f-8f18-30192f310c71" />
