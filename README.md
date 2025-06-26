@@ -4,7 +4,11 @@
 
 
 기존 DPO의 수식
+
+
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/388650c7-531b-46b4-a3c9-c00bc575f44c" />
+
+
 ->reward가 잘못 측정되면 loss가 급등
 
 
