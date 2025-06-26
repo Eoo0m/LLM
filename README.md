@@ -1,4 +1,4 @@
-# beta DPO
+# β DPO
 
 [E0oom/Llama-3.2-1B-betadpo](https://huggingface.co/E0oom/Llama-3.2-1B-betadpo)
 
