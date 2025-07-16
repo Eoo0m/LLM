@@ -18,7 +18,11 @@
 결과적으로 학습을 불안정하게 할 수 있는 이상값[outliers]의 영항을 줄여배치 수준 β 교정의 정밀도와 견고성을 향상시킨다.
 
 
-<pre> ```python self.M0 = self.momentum * self.M0 + (1 - self.momentum) * Mi self.var = self.momentum * self.var + (1 - self.momentum) * (delta ** 2) sigma = self.var ** 0.5 ``` </pre>
+<pre> 
+self.M0 = self.momentum * self.M0 + (1 - self.momentum) * Mi 
+  
+self.var = self.momentum * self.var + (1 - self.momentum) * (delta ** 2) 
+sigma = self.var ** 0.5 ``` </pre>
 
 
 <img width="777" height="306" alt="image" src="https://github.com/user-attachments/assets/9445ef82-03ea-4002-b8f6-10655649cab3" />
