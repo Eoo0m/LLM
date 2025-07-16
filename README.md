@@ -1,6 +1,8 @@
 <img width="818" height="277" alt="image" src="https://github.com/user-attachments/assets/0e453edc-ec26-43ac-9c2e-70c6d7d11b79" />
 
-β-DPO
+#β-DPO
+
+
 β-DPO (Wu et al., 2024)를 참조하여 정적 β 값의 한계를 극복하였습니다.
 논문에서 제가 구현한 부분을 요약하면 다음과 같습니다.
 
