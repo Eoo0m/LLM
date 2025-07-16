@@ -20,11 +20,11 @@
 
 <pre> 
 self.M0 = self.momentum * self.M0 + (1 - self.momentum) * Mi 
-  
 self.var = self.momentum * self.var + (1 - self.momentum) * (delta ** 2) 
 sigma = self.var ** 0.5 ``` </pre>
 
 배치의 한계로 기존 통계 기법을 적용하기 어려운 문제가 발생했습니다.
+
 이에 평균을 moving average로 표준편차를 momentum 기반으로하여 controlchart를 구성한 후 이상치를 잡아내는 방식으로 구현하였습니다.
 
 <img width="777" height="306" alt="image" src="https://github.com/user-attachments/assets/9445ef82-03ea-4002-b8f6-10655649cab3" />
