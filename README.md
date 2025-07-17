@@ -1,6 +1,9 @@
 <img width="818" height="277" alt="image" src="https://github.com/user-attachments/assets/0e453edc-ec26-43ac-9c2e-70c6d7d11b79" />
 
+https://huggingface.co/E0oom/Llama-3.2-1B-betadpo
+
 # β-DPO
+
 <img width="395" height="120" alt="image" src="https://github.com/user-attachments/assets/7349ad07-4de8-49f5-a97d-0e8f3369fe6c" />
 
 
